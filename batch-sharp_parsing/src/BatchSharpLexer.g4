@@ -1,6 +1,7 @@
 lexer grammar BatchSharpLexer;
 
 ARROBA: '@';
+DASH: '-';
 DECIMAL: DIGITS DOT DIGITS;
 DIGIT: [0-9];
 DIGITS: DIGIT+;
@@ -8,8 +9,13 @@ DOT: '.';
 LETTER: LOWERCASE | UPPERCASE;
 LETTERS: LETTER+;
 LOWERCASE: [a-z];
+LPAREN: '(';
 NEWLINE: '\n';
 NUMBER: DIGITS | DECIMAL;
 NUMBERS: NUMBER+;
+RPAREN: ')';
+SEMI: ';';
+TEXT: (LETTER | DASH | UNDERSCORE)+;
+UNDERSCORE: '_';
 UPPERCASE: [A-Z];
 WS: [ \t]+ -> skip;

@@ -2,4 +2,4 @@ grammar BatchSharpPreProcessor;
 
 import BatchSharpLexer;
 
-directive: ARROBA LETTERS LETTERS;
+directive: ARROBA LETTERS | ARROBA LETTERS LETTERS;

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/batch-sharp/batch-sharp.iml" filepath="$PROJECT_DIR$/batch-sharp/batch-sharp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batch-sharp_parsing/batch-sharp.iml" filepath="$PROJECT_DIR$/batch-sharp_parsing/batch-sharp.iml" />
     </modules>
   </component>
 </project>
-
