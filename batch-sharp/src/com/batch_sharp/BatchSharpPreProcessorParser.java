@@ -1,4 +1,4 @@
-// Generated from C:/Users/tobe/Source/Repos/batch-sharp/batch-sharp\BatchSharpPreProcessor.g4 by ANTLR 4.5
+// Generated from C:/Users/tobe/Source/Repos/batch-sharp/batch-sharp/src\BatchSharpPreProcessor.g4 by ANTLR 4.5
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -17,7 +17,7 @@ public class BatchSharpPreProcessorParser extends Parser {
 		new PredictionContextCache();
 	public static final int
 		ARROBA=1, DECIMAL=2, DIGIT=3, DIGITS=4, DOT=5, LETTER=6, LETTERS=7, LOWERCASE=8, 
-		NUMBER=9, NUMBERS=10, UPPERCASE=11, WS=12;
+		NEWLINE=9, NUMBER=10, NUMBERS=11, UPPERCASE=12, WS=13;
 	public static final int
 		RULE_directive = 0;
 	public static final String[] ruleNames = {
@@ -25,11 +25,11 @@ public class BatchSharpPreProcessorParser extends Parser {
 	};
 
 	private static final String[] _LITERAL_NAMES = {
-		null, "'@'", null, null, null, "'.'"
+		null, "'@'", null, null, null, "'.'", null, null, null, "'\n'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
 		null, "ARROBA", "DECIMAL", "DIGIT", "DIGITS", "DOT", "LETTER", "LETTERS", 
-		"LOWERCASE", "NUMBER", "NUMBERS", "UPPERCASE", "WS"
+		"LOWERCASE", "NEWLINE", "NUMBER", "NUMBERS", "UPPERCASE", "WS"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
@@ -131,7 +131,7 @@ public class BatchSharpPreProcessorParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\16\t\4\2\t\2\3\2"+
+		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\17\t\4\2\t\2\3\2"+
 		"\3\2\3\2\3\2\3\2\2\2\3\2\2\2\7\2\4\3\2\2\2\4\5\7\3\2\2\5\6\7\t\2\2\6\7"+
 		"\7\t\2\2\7\3\3\2\2\2\2";
 	public static final ATN _ATN =

@@ -1,4 +1,4 @@
-// Generated from C:/Users/tobe/Source/Repos/batch-sharp/batch-sharp\BatchSharp.g4 by ANTLR 4.5
+// Generated from C:/Users/tobe/Source/Repos/batch-sharp/batch-sharp/src\BatchSharp.g4 by ANTLR 4.5
 import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -16,6 +16,18 @@ public interface BatchSharpVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitApplication(@NotNull BatchSharpParser.ApplicationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link BatchSharpParser#codeline}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCodeline(@NotNull BatchSharpParser.CodelineContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link BatchSharpParser#c}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitC(@NotNull BatchSharpParser.CContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link BatchSharpParser#directive}.
 	 * @param ctx the parse tree

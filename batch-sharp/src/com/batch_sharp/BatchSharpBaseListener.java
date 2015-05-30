@@ -1,4 +1,4 @@
-// Generated from C:/Users/tobe/Source/Repos/batch-sharp/batch-sharp\BatchSharp.g4 by ANTLR 4.5
+// Generated from C:/Users/tobe/Source/Repos/batch-sharp/batch-sharp/src\BatchSharp.g4 by ANTLR 4.5
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.misc.NotNull;
@@ -23,6 +23,30 @@ public class BatchSharpBaseListener implements BatchSharpListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitApplication(@NotNull BatchSharpParser.ApplicationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCodeline(@NotNull BatchSharpParser.CodelineContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCodeline(@NotNull BatchSharpParser.CodelineContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterC(@NotNull BatchSharpParser.CContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitC(@NotNull BatchSharpParser.CContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

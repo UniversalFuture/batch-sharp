@@ -2,4 +2,6 @@ grammar BatchSharp;
 
 import BatchSharpPreProcessor;
 
-application: (directive)+;
+application: (codeline NEWLINE+)* codeline;
+codeline: (directive)+;
+c: codeline NEWLINE;
