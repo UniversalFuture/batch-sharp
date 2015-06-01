@@ -1,0 +1,24 @@
+lexer grammar BatchSharpLexer;
+
+ARROBA: '@';
+COMMA: ',';
+DASH: '-';
+DECIMAL: [0-9]+ '.' [0-9]+;
+DOLLAR: '$';
+DOT: '.';
+EQUALS: '=';
+H: 'h';
+ID: [a-zA-Z] [a-zA-Z_-0-9]*;
+LPAREN: '(';
+NEWLINE: '\n';
+NUMBER: [0-9]+ | DECIMAL;
+NUMERAL: [0-9];
+PERCENT: '%';
+RPAREN: ')';
+SEMI: ';';
+SLASH: '/';
+SINGLE_LINE_COMMENT : ('//' Input_character*) -> channel(HIDDEN);
+fragment Input_character: ~([\u000D\u000A\u0085\u2028\u2029]);
+UNDERSCORE: '_';
+WS: [ \t]+ -> skip;
+ZERO_X: '0x';

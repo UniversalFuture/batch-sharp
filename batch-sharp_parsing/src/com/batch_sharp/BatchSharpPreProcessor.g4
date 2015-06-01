@@ -2,4 +2,4 @@ grammar BatchSharpPreProcessor;
 
 import BatchSharpLexer;
 
-directive: ARROBA LETTERS | ARROBA LETTERS LETTERS;
+directive: ARROBA key=ID | ARROBA key=ID value=ID;
