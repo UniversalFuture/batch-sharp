@@ -2,27 +2,17 @@ package com.batch_sharp;
 
 import org.antlr.v4.runtime.misc.NotNull;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * Created by tobe on 5/30/2015.
  */
 public class BatchSharpCompiler extends BatchSharpBaseVisitor<BatchSharpObject> {
 
-    FileOutputStream fileOutputStream;
+    PrintStream outputStream;
 
-    public BatchSharpCompiler(String outputFileName) throws FileNotFoundException, IOException {
-        File file = new File(outputFileName);
-        if (file.exists()) {
-            file.delete();
-            file.createNewFile();
-        } else {
-            file.createNewFile();
-        }
-        fileOutputStream = new FileOutputStream(outputFileName);
+    public BatchSharpCompiler(PrintStream oStream) {
+        outputStream = oStream;
     }
 
     @Override

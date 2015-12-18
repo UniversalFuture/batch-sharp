@@ -2,7 +2,7 @@ grammar BatchSharp;
 
 import BatchSharpPreProcessor;
 
-application: (codeline SEMI? NEWLINE+)* codeline SEMI?;
+compilationUnit: (codeline SEMI? NEWLINE+)* codeline SEMI?;
 codeline: (directive | stmt);
 
 stmt: callstmt | vardeclstmt;
@@ -22,5 +22,3 @@ variable_dollar: DOLLAR name=ID;
 arguments: (expression COMMA)* expression | LPAREN (expression COMMA)* expression RPAREN;
 hex: ZERO_X value=NUMERAL+ | value=NUMERAL+ H;
 num: value=NUMBER;
-
-test: .;
