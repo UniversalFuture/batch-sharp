@@ -1,0 +1,38 @@
+@title "Batch# Kitchen Sink"
+@author regiostech
+@description "Shows off Batch#'s capabilities"
+//@include "yourfilenamehere.bs"
+//@include "<bundledwithcompiler.bs>"
+
+const int $globalOne = 1;
+echo("I globally did something");
+
+int numberAt(array $array, int $index) {
+    return $array[$index];
+}
+
+exampleTry() {
+    try {
+        invalidCommand();
+        echo("Without a try-catch block, this message would be displayed");
+    } catch(int $error) {
+        echo($"Error: {$error}");
+    }
+}
+
+listFilesInDir() {
+    for recursive file $file in dir "*" {
+        //echo($"We found {$file}");
+    }
+}
+
+int main(int $argc, array $argv) {
+    for $i in (0..$argc - 1) {
+        echo($"String interpolation is cool {$argv[$i]}");
+    }
+    exampleTry();
+    listFilesInDir();
+    $arr = [1,2];
+    echo(numberAt($arr, 1));
+    return 1337;
+}

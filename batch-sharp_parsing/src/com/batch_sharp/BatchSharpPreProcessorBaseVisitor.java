@@ -1,6 +1,5 @@
-// Generated from C:/Users/tobe/Source/Repos/batch-sharp/batch-sharp_parsing/src/com/batch_sharp\BatchSharpPreProcessor.g4 by ANTLR 4.5
+// Generated from C:/Users/tobe/Source/Repos/batch-sharp/batch-sharp_parsing/src/com/batch_sharp\BatchSharpPreProcessor.g4 by ANTLR 4.5.1
 package com.batch_sharp;
-import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -18,5 +17,5 @@ public class BatchSharpPreProcessorBaseVisitor<T> extends AbstractParseTreeVisit
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitDirective(@NotNull BatchSharpPreProcessorParser.DirectiveContext ctx) { return visitChildren(ctx); }
+	@Override public T visitDirective(BatchSharpPreProcessorParser.DirectiveContext ctx) { return visitChildren(ctx); }
 }

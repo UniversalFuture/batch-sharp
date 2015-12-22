@@ -1,0 +1,19 @@
+@name HelloWorld
+
+const num $one = 1; //Can't be modified
+num $two = 2;
+
+string prompt($message) {
+    //Numerical values will not be accepted
+    echo($message);
+    inline {
+        set /p retVal=
+    }
+    return `retVal`;
+}
+
+main() {
+    $name = prompt("What's your name? ");
+    echo("Hello, %name%!"); //String numerpolation! :)
+    return 0; //Useless here
+}

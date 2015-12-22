@@ -1,6 +1,5 @@
-// Generated from C:/Users/tobe/Source/Repos/batch-sharp/batch-sharp_parsing/src/com/batch_sharp\BatchSharpPreProcessor.g4 by ANTLR 4.5
+// Generated from C:/Users/tobe/Source/Repos/batch-sharp/batch-sharp_parsing/src/com/batch_sharp\BatchSharpPreProcessor.g4 by ANTLR 4.5.1
 package com.batch_sharp;
-import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -16,5 +15,5 @@ public interface BatchSharpPreProcessorVisitor<T> extends ParseTreeVisitor<T> {
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitDirective(@NotNull BatchSharpPreProcessorParser.DirectiveContext ctx);
+	T visitDirective(BatchSharpPreProcessorParser.DirectiveContext ctx);
 }
